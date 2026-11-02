@@ -1,0 +1,26 @@
+name: Compilar Pausa para iPhone
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compilar:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - name: Baixar projeto
+        uses: actions/checkout@v4
+
+      - name: Compilar aplicativo
+        run: bash scripts/compilar-ipa.sh
+
+      - name: Disponibilizar arquivo
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pausa-para-instalar-no-Windows
+          path: dist/Pausa-sem-assinatura.ipa
+          if-no-files-found: error
+          retention-days: 7
