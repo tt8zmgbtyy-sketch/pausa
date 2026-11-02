@@ -1,0 +1,14 @@
+{
+  "name": "pausa-ios",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Safari Web Extension para reduzir o acesso a Reels no iPhone",
+  "scripts": {
+    "test": "node --test --test-isolation=none tests/*.test.cjs",
+    "check": "node scripts/check-project.cjs"
+  },
+  "engines": { "node": ">=22.8.0" },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}
