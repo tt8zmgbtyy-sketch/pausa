@@ -10,8 +10,15 @@
 		B10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000002 /* ContentView.swift */; };
 		B10000000000000000000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* Assets.xcassets */; };
 		B10000000000000000000004 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* SafariWebExtensionHandler.swift */; };
-		B10000000000000000000005 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000007 /* Resources */; };
 		B10000000000000000000006 /* PausaExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F10000000000000000000009 /* PausaExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B30000000000000000000001 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000001 /* manifest.json */; };
+		B30000000000000000000002 /* policy.js in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000002 /* policy.js */; };
+		B30000000000000000000003 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000003 /* content.js */; };
+		B30000000000000000000004 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000004 /* content.css */; };
+		B30000000000000000000005 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000005 /* popup.html */; };
+		B30000000000000000000006 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000006 /* popup.css */; };
+		B30000000000000000000007 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000007 /* popup.js */; };
+		B30000000000000000000008 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000008 /* icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +50,16 @@
 		F10000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10000000000000000000005 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		F10000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F10000000000000000000007 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		F10000000000000000000008 /* Pausa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pausa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10000000000000000000009 /* PausaExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PausaExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30000000000000000000001 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		F30000000000000000000002 /* policy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = policy.js; sourceTree = "<group>"; };
+		F30000000000000000000003 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		F30000000000000000000004 /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
+		F30000000000000000000005 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		F30000000000000000000006 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		F30000000000000000000007 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		F30000000000000000000008 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +81,7 @@
 		};
 		E10000000000000000000004 /* PausaExtension */ = {
 			isa = PBXGroup;
-			children = (F10000000000000000000005 /* SafariWebExtensionHandler.swift */, F10000000000000000000007 /* Resources */, F10000000000000000000006 /* Info.plist */, );
+			children = (F10000000000000000000005 /* SafariWebExtensionHandler.swift */, E30000000000000000000001 /* Resources */, F10000000000000000000006 /* Info.plist */, );
 			path = PausaExtension;
 			sourceTree = "<group>";
 		};
@@ -75,6 +89,12 @@
 			isa = PBXGroup;
 			children = (F10000000000000000000008 /* Pausa.app */, F10000000000000000000009 /* PausaExtension.appex */, );
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E30000000000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (F30000000000000000000001 /* manifest.json */, F30000000000000000000002 /* policy.js */, F30000000000000000000003 /* content.js */, F30000000000000000000004 /* content.css */, F30000000000000000000005 /* popup.html */, F30000000000000000000006 /* popup.css */, F30000000000000000000007 /* popup.js */, F30000000000000000000008 /* icons */, );
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +151,7 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		D10000000000000000000005 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B10000000000000000000003 /* Assets.xcassets in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
-		D10000000000000000000007 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B10000000000000000000005 /* Resources in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		D10000000000000000000007 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B30000000000000000000001 /* manifest.json in Resources */, B30000000000000000000002 /* policy.js in Resources */, B30000000000000000000003 /* content.js in Resources */, B30000000000000000000004 /* content.css in Resources */, B30000000000000000000005 /* popup.html in Resources */, B30000000000000000000006 /* popup.css in Resources */, B30000000000000000000007 /* popup.js in Resources */, B30000000000000000000008 /* icons in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */

@@ -2,6 +2,14 @@ name: Compilar Pausa para iPhone
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'PausaApp/**'
+      - 'PausaExtension/**'
+      - 'Pausa.xcodeproj/**'
+      - 'scripts/**'
+      - '.github/workflows/compilar-iphone.yml'
 
 permissions:
   contents: read
