@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Pausa — Instagram sem Reels",
+  "version": "0.1.0",
+  "description": "Oculta links de Reels e bloqueia suas páginas no Instagram aberto no Safari. Não altera o aplicativo oficial.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://instagram.com/*", "https://www.instagram.com/*", "https://m.instagram.com/*"],
+      "js": ["policy.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Pausa",
+    "default_popup": "popup.html",
+    "default_icon": {"48": "icons/icon-48.png", "96": "icons/icon-96.png"}
+  },
+  "icons": {"48": "icons/icon-48.png", "96": "icons/icon-96.png", "128": "icons/icon-128.png", "256": "icons/icon-256.png", "512": "icons/icon-512.png"}
+}

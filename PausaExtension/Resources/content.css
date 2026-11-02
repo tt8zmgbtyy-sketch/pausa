@@ -1,0 +1,15 @@
+/* The script marks only links whose parsed destination is a Reels route. */
+html[data-pausa-enabled="true"] [data-pausa-reel-link] {
+  display: none !important;
+}
+
+/* Covers direct loads and SPA navigation while keeping our own notice visible. */
+html[data-pausa-route-blocked="true"] body {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+#pausa-reels-notice {
+  visibility: visible !important;
+  pointer-events: auto !important;
+}

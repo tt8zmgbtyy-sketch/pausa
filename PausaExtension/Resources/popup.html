@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pausa</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><span class="brand-mark" aria-hidden="true">Ⅱ</span><strong>pausa<span>.</span></strong></header>
+  <p class="eyebrow">MENOS AUTOMÁTICO. MAIS ESCOLHA.</p>
+  <h1>O Instagram.<br>Sem a espiral.</h1>
+  <p class="intro">Oculte a aba Reels e bloqueie suas páginas no Instagram pelo Safari.</p>
+  <div class="control">
+    <label for="enabled">Proteção contra Reels<small id="state">Carregando preferência…</small></label>
+    <input type="checkbox" role="switch" id="enabled" aria-describedby="state" disabled>
+  </div>
+  <p id="feedback" role="status" aria-live="polite"></p>
+  <div class="scope"><span aria-hidden="true">↗</span><p><strong>Só no Safari</strong><br>Não altera o app oficial do Instagram. Conceda acesso a instagram.com nas permissões da extensão.</p></div>
+  <footer>Sem conta. Sem coleta de navegação.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
